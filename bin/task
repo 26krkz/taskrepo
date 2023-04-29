@@ -1,0 +1,3 @@
+#!/bin/bash
+cd $HOME/documents/study_projects/taskrepo_cli/
+npm start
