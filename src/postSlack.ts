@@ -1,15 +1,14 @@
-const pkg = require("@slack/bolt");
-const { App } = pkg;
-require("dotenv").config();
-
+const { App } = require("@slack/bolt");
+import * as dotenv from "dotenv";
+dotenv.config();
 const app = new App({
   token: process.env.SLACK_TOKEN,
   signingSecret: process.env.SLACK_SECRET_ID,
 });
 
-const channelId = "CGSJV8M7H";
+const channelId = process.env.SLACK_CHANNEL_ID;
 
-module.exports = (text: string) => {
+export default (text: string) => {
   try {
     app.client.chat.postMessage({
       channel: channelId,

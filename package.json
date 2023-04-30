@@ -1,5 +1,5 @@
 {
-  "name": "taskrepo_cli",
+  "name": "taskrepo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,6 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^17.0.39",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.6.2",
