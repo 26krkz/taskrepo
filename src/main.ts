@@ -17,7 +17,10 @@ import getMessage from "./getMessage";
   const todaysAddingTasks: string[] = await addTasks("本日");
 
   // 明日の作業を選択
-  const tommorowsSelectTasks: string[] = await selectTasks("明日", todaysAddingTasks);
+  const tommorowsSelectTasks: string[] = await selectTasks(
+    "明日",
+    todaysAddingTasks
+  );
   // 明日の作業に追加があれば追記
   const tommorowsAddingTasks: string[] = await addTasks("明日");
 

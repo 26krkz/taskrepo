@@ -1,5 +1,5 @@
 import readline from "readline";
-const postSlack = require("./postSlack");
+import postSlack from "./postSlack";
 
 const checkPostToSlack = (slackText: string) => {
   const rl = readline.createInterface({
