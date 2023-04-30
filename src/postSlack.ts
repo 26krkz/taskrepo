@@ -6,7 +6,7 @@ const app = new App({
   signingSecret: process.env.SLACK_SECRET_ID,
 });
 
-const channelId = "CGSJV8M7H";
+const channelId = process.env.SLACK_CHANNEL_ID;
 
 export default (text: string) => {
   try {

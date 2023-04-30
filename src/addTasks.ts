@@ -1,6 +1,6 @@
 import readline from "readline";
 
-const checkTask = (question: string): Promise<Array<string>> => {
+const checkTask = (question: string): Promise<string[]> => {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,

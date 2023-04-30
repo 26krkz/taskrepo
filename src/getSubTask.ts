@@ -37,7 +37,7 @@ const checkTask = (question: string): Promise<boolean> => {
 
 // サブタスク（よもやま、mtg）があったかどうか対話式で取得し、あった場合returnする配列に追加する。
 const getSubTasks = async () => {
-  const subTasks: Array<string> = [];
+  const subTasks: string[] = [];
   const yomoyama = await checkTask("よもやまあった？(y/N):");
   const mtg = await checkTask("ミーティングあった？(y/N):");
   if (yomoyama) subTasks.push("よもやま");

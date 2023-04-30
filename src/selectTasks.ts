@@ -23,7 +23,7 @@ const selectTasks = async (
 
   const res: string[] = multiSlelect
     .run()
-    .then((answer: Array<string>) => {
+    .then((answer: string[]) => {
       return answer.map((v) => v.replace(/.*\d{6}_(.*)（.*/, "$1"));
     })
     .catch(() => {

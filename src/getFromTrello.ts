@@ -5,7 +5,7 @@ dotenv.config();
 const apiKey = process.env.TRELLO_KEY;
 const apiToken = process.env.TRELLO_TOKEN;
 
-export default () => {
+const getFromTrello = () => {
   return ft(
     `https://api.trello.com/1/members/me/cards?key=${apiKey}&token=${apiToken}`,
     {
@@ -21,3 +21,5 @@ export default () => {
     .then((cards: any) => cards.map((card: any) => card.name))
     .catch((err: any) => console.error(err));
 };
+
+export default getFromTrello;
